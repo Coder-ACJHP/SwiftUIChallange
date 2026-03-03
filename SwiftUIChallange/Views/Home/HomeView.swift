@@ -26,6 +26,7 @@ struct HomeView: View {
     @State private var activeSheet: SheetDestination?
     @State private var activeFullScreen: FullScreenDestination?
     @State private var isPresented: Bool = false
+    @State private var isTravelExensesPresented: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -58,12 +59,20 @@ struct HomeView: View {
                     color: .red
                 ) { activeSheet = .addNewPlace }
                 
+                createButton(
+                    title: "Travel Expense",
+                    presentStyle: "(fullScreenCover)",
+                    color: .mint
+                ) { isTravelExensesPresented = true }
                 Spacer()
             }
             .padding(.top, 10.resp)
             .padding(.horizontal, 16.resp)
             .navigationBarTitleDisplayMode(.automatic)
             .navigationTitle("Home")
+            .navigationDestination(isPresented: $isTravelExensesPresented, destination: {
+                TravelExpenses()
+            })
             // PopupView
             .fullScreenCover(isPresented: $isPresented) {
                 PopupView(selectionStateChanged: { country in
@@ -75,9 +84,8 @@ struct HomeView: View {
             }
             // Paywall from bottom to top (UIKit like)
             .fullScreenCover(item: $activeFullScreen) { screen in
-                switch screen {
-                    case .paywall:
-                        PaywallView()
+                if screen == .paywall {
+                    PaywallView()
                 }
             }
         }

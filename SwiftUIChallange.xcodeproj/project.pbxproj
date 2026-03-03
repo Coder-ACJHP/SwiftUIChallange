@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F218DFFD2F56FBA6001AD1D4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218DFFC2F56FBA6001AD1D4 /* Card.swift */; };
+		F218DFFF2F56FBBA001AD1D4 /* TravelCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */; };
+		F22B46B22F56D8D2001384C9 /* TravelExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */; };
+		F22B46B42F56EFF0001384C9 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B46B32F56EFF0001384C9 /* View+Extension.swift */; };
 		F28808242F5197C000413EE6 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808232F5197C000413EE6 /* PaywallView.swift */; };
 		F28808262F51AB9700413EE6 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808252F51AB9700413EE6 /* ProductCardView.swift */; };
 		F28808292F51AF0A00413EE6 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808282F51AF0A00413EE6 /* Package.swift */; };
@@ -53,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F218DFFC2F56FBA6001AD1D4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCardView.swift; sourceTree = "<group>"; };
+		F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelExpenses.swift; sourceTree = "<group>"; };
+		F22B46B32F56EFF0001384C9 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		F28808232F5197C000413EE6 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		F28808252F51AB9700413EE6 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		F28808282F51AF0A00413EE6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -109,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F218DFFB2F56FB9B001AD1D4 /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				F218DFFC2F56FBA6001AD1D4 /* Card.swift */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
+		F22B46B02F56D8B8001384C9 /* Travel Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */,
+				F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */,
+			);
+			path = "Travel Expenses";
+			sourceTree = "<group>";
+		};
 		F28808222F5197AE00413EE6 /* Paywall */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +276,7 @@
 				F2DA51102F508645008196FF /* Settings */,
 				F2A5EA7A2F558DDC0064C23E /* Popup */,
 				F2DA51012F504FE6008196FF /* Permisson */,
+				F22B46B02F56D8B8001384C9 /* Travel Expenses */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +287,7 @@
 				F2DA50FF2F504F20008196FF /* Color+Extension.swift */,
 				F2DA510E2F507FC0008196FF /* CGFloat+Extension.swift */,
 				F2DA51132F509A05008196FF /* Line.swift */,
+				F22B46B32F56EFF0001384C9 /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +304,7 @@
 		F2DA51042F505D6B008196FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F218DFFB2F56FB9B001AD1D4 /* Travel */,
 				F2A5EA802F55A4F50064C23E /* PopupView */,
 				F288082F2F51DB6800413EE6 /* AddNewPlace */,
 				F28808272F51AEFA00413EE6 /* Paywall */,
@@ -442,13 +470,16 @@
 			files = (
 				F288082E2F51C9D600413EE6 /* AddPlaceView.swift in Sources */,
 				F2A5EA7F2F55A48F0064C23E /* PopupViewModel.swift in Sources */,
+				F218DFFD2F56FBA6001AD1D4 /* Card.swift in Sources */,
 				F28808242F5197C000413EE6 /* PaywallView.swift in Sources */,
 				F288082B2F51B9E800413EE6 /* AlertItem.swift in Sources */,
 				F2DA510D2F507168008196FF /* PermissionCardState.swift in Sources */,
 				F2DA50F02F504D7B008196FF /* PermissionsView.swift in Sources */,
 				F2DA51062F505D75008196FF /* PermissionCardItem.swift in Sources */,
 				F2DA510B2F50714A008196FF /* AppPermissionType.swift in Sources */,
+				F22B46B22F56D8D2001384C9 /* TravelExpenses.swift in Sources */,
 				F2DA51092F50712C008196FF /* PermissionManager.swift in Sources */,
+				F22B46B42F56EFF0001384C9 /* View+Extension.swift in Sources */,
 				F28808292F51AF0A00413EE6 /* Package.swift in Sources */,
 				F28808262F51AB9700413EE6 /* ProductCardView.swift in Sources */,
 				F2DA51122F508653008196FF /* SettingsView.swift in Sources */,
@@ -457,6 +488,7 @@
 				F2A5EA7C2F558DF50064C23E /* PopupView.swift in Sources */,
 				F2DA51032F504FFD008196FF /* PermissionCard.swift in Sources */,
 				F2DA51162F509B38008196FF /* SettingSectionsView.swift in Sources */,
+				F218DFFF2F56FBBA001AD1D4 /* TravelCardView.swift in Sources */,
 				F28808312F51DB7800413EE6 /* Place.swift in Sources */,
 				F2A5EA822F55A4FE0064C23E /* Country.swift in Sources */,
 				F2DA51142F509A05008196FF /* Line.swift in Sources */,
