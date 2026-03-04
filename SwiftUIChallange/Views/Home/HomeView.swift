@@ -23,69 +23,82 @@ struct HomeView: View {
         var id: Self { self }
     }
     
+    @State private var isPresented: Bool = false
     @State private var activeSheet: SheetDestination?
     @State private var activeFullScreen: FullScreenDestination?
-    @State private var isPresented: Bool = false
     @State private var isTravelExensesPresented: Bool = false
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 10.resp) {
-                createButton(
-                    title: "Paywall",
-                    presentStyle: "(fullScreenCover)",
-                    color: .yellow
-                ) { activeFullScreen = .paywall }
-                
-                createButton(
-                    title: "Full Screen Popup",
-                    presentStyle: "(fullScreenCover)",
-                    color: .brown
-                ) {
-                    var transaction = Transaction()
-                    transaction.disablesAnimations = true
-                    withTransaction(transaction) { isPresented = true }
+            ScrollView(.vertical) {
+                VStack(spacing: 10.resp) {
+                    createButton(
+                        title: "Paywall",
+                        presentStyle: "(fullScreenCover)",
+                        color: .yellow
+                    ) { activeFullScreen = .paywall }
+                    
+                    createButton(
+                        title: "Full Screen Popup",
+                        presentStyle: "(fullScreenCover)",
+                        color: .brown
+                    ) {
+                        var transaction = Transaction()
+                        transaction.disablesAnimations = true
+                        withTransaction(transaction) { isPresented = true }
+                    }
+                    
+                    createButton(
+                        title: "Settings",
+                        presentStyle: "(sheet)",
+                        color: .purple
+                    ) { activeSheet = .settings }
+                    
+                    createButton(
+                        title: "Add New Place",
+                        presentStyle: "(sheet)",
+                        color: .red
+                    ) { activeSheet = .addNewPlace }
+                    
+                    createButton(
+                        title: "Travel Expense",
+                        presentStyle: "(fullScreenCover)",
+                        color: .mint
+                    ) { isTravelExensesPresented = true }
+                    
+                    Group {
+                        Text("Cycling Mod — her basışta palet değişir").foregroundStyle(.gray).font(.caption)
+                        if #available(iOS 18.0, *) {
+                            MeshGradientButton(title: "Magic ✨",    mode: .cycling)
+                        } else {
+                            Text("Mesh gradient iOS 18.0+ only")
+                                .foregroundStyle(.orange)
+                                .font(.footnote)
+                        }
+                    }
+                    Spacer()
                 }
-                
-                createButton(
-                    title: "Settings",
-                    presentStyle: "(sheet)",
-                    color: .purple
-                ) { activeSheet = .settings }
-                
-                createButton(
-                    title: "Add New Place",
-                    presentStyle: "(sheet)",
-                    color: .red
-                ) { activeSheet = .addNewPlace }
-                
-                createButton(
-                    title: "Travel Expense",
-                    presentStyle: "(fullScreenCover)",
-                    color: .mint
-                ) { isTravelExensesPresented = true }
-                Spacer()
-            }
-            .padding(.top, 10.resp)
-            .padding(.horizontal, 16.resp)
-            .navigationBarTitleDisplayMode(.automatic)
-            .navigationTitle("Home")
-            .navigationDestination(isPresented: $isTravelExensesPresented, destination: {
-                TravelExpenses()
-            })
-            // PopupView
-            .fullScreenCover(isPresented: $isPresented) {
-                PopupView(selectionStateChanged: { country in
-                    guard let country else { return }
-                    print("Selected country: \(country.name)")
+                .padding(.top, 10.resp)
+                .padding(.horizontal, 16.resp)
+                .navigationBarTitleDisplayMode(.automatic)
+                .navigationTitle("Home")
+                .navigationDestination(isPresented: $isTravelExensesPresented, destination: {
+                    TravelExpenses()
                 })
-                // Remove background and make it clear visible
-                .presentationBackground(.clear)
-            }
-            // Paywall from bottom to top (UIKit like)
-            .fullScreenCover(item: $activeFullScreen) { screen in
-                if screen == .paywall {
-                    PaywallView()
+                // PopupView
+                .fullScreenCover(isPresented: $isPresented) {
+                    PopupView(selectionStateChanged: { country in
+                        guard let country else { return }
+                        print("Selected country: \(country.name)")
+                    })
+                    // Remove background and make it clear visible
+                    .presentationBackground(.clear)
+                }
+                // Paywall from bottom to top (UIKit like)
+                .fullScreenCover(item: $activeFullScreen) { screen in
+                    if screen == .paywall {
+                        PaywallView()
+                    }
                 }
             }
         }

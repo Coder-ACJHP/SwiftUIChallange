@@ -11,6 +11,7 @@
 		F218DFFF2F56FBBA001AD1D4 /* TravelCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */; };
 		F22B46B22F56D8D2001384C9 /* TravelExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */; };
 		F22B46B42F56EFF0001384C9 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B46B32F56EFF0001384C9 /* View+Extension.swift */; };
+		F264DC8F2F5817CD000B7073 /* MeshGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DC8E2F5817CD000B7073 /* MeshGradientButton.swift */; };
 		F28808242F5197C000413EE6 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808232F5197C000413EE6 /* PaywallView.swift */; };
 		F28808262F51AB9700413EE6 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808252F51AB9700413EE6 /* ProductCardView.swift */; };
 		F28808292F51AF0A00413EE6 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808282F51AF0A00413EE6 /* Package.swift */; };
@@ -61,6 +62,7 @@
 		F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCardView.swift; sourceTree = "<group>"; };
 		F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelExpenses.swift; sourceTree = "<group>"; };
 		F22B46B32F56EFF0001384C9 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		F264DC8E2F5817CD000B7073 /* MeshGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientButton.swift; sourceTree = "<group>"; };
 		F28808232F5197C000413EE6 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		F28808252F51AB9700413EE6 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		F28808282F51AF0A00413EE6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 				F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */,
 			);
 			path = "Travel Expenses";
+			sourceTree = "<group>";
+		};
+		F264DC8D2F5817B7000B7073 /* MeshGradientButton */ = {
+			isa = PBXGroup;
+			children = (
+				F264DC8E2F5817CD000B7073 /* MeshGradientButton.swift */,
+			);
+			path = MeshGradientButton;
 			sourceTree = "<group>";
 		};
 		F28808222F5197AE00413EE6 /* Paywall */ = {
@@ -277,6 +287,7 @@
 				F2A5EA7A2F558DDC0064C23E /* Popup */,
 				F2DA51012F504FE6008196FF /* Permisson */,
 				F22B46B02F56D8B8001384C9 /* Travel Expenses */,
+				F264DC8D2F5817B7000B7073 /* MeshGradientButton */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -480,6 +491,7 @@
 				F22B46B22F56D8D2001384C9 /* TravelExpenses.swift in Sources */,
 				F2DA51092F50712C008196FF /* PermissionManager.swift in Sources */,
 				F22B46B42F56EFF0001384C9 /* View+Extension.swift in Sources */,
+				F264DC8F2F5817CD000B7073 /* MeshGradientButton.swift in Sources */,
 				F28808292F51AF0A00413EE6 /* Package.swift in Sources */,
 				F28808262F51AB9700413EE6 /* ProductCardView.swift in Sources */,
 				F2DA51122F508653008196FF /* SettingsView.swift in Sources */,
