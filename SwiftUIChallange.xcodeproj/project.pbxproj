@@ -11,6 +11,16 @@
 		F218DFFF2F56FBBA001AD1D4 /* TravelCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */; };
 		F22B46B22F56D8D2001384C9 /* TravelExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */; };
 		F22B46B42F56EFF0001384C9 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B46B32F56EFF0001384C9 /* View+Extension.swift */; };
+		F240C9B72F59854700338A25 /* InstaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9B62F59854700338A25 /* InstaContentView.swift */; };
+		F240C9B92F5986C900338A25 /* InstaReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9B82F5986C900338A25 /* InstaReelsView.swift */; };
+		F240C9C12F598BFC00338A25 /* InstaHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9C02F598BFC00338A25 /* InstaHomeView.swift */; };
+		F240C9C32F598C2B00338A25 /* InstaShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9C22F598C2B00338A25 /* InstaShareView.swift */; };
+		F240C9C52F598C3700338A25 /* InstaSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9C42F598C3700338A25 /* InstaSearchView.swift */; };
+		F240C9C72F598C5D00338A25 /* InstaProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9C62F598C5D00338A25 /* InstaProfileView.swift */; };
+		F240C9C92F59A43200338A25 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9C82F59A43200338A25 /* VideoPlayerView.swift */; };
+		F240C9CC2F59A61500338A25 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9CB2F59A61500338A25 /* Reel.swift */; };
+		F240C9D02F5AED8100338A25 /* InstaReelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9CF2F5AED8100338A25 /* InstaReelsViewModel.swift */; };
+		F240C9D32F5B0AA800338A25 /* ReelCommentsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240C9D22F5B0AA800338A25 /* ReelCommentsSheet.swift */; };
 		F264DC8F2F5817CD000B7073 /* MeshGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DC8E2F5817CD000B7073 /* MeshGradientButton.swift */; };
 		F28808242F5197C000413EE6 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808232F5197C000413EE6 /* PaywallView.swift */; };
 		F28808262F51AB9700413EE6 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28808252F51AB9700413EE6 /* ProductCardView.swift */; };
@@ -62,6 +72,17 @@
 		F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCardView.swift; sourceTree = "<group>"; };
 		F22B46B12F56D8D2001384C9 /* TravelExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelExpenses.swift; sourceTree = "<group>"; };
 		F22B46B32F56EFF0001384C9 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		F240C9B62F59854700338A25 /* InstaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaContentView.swift; sourceTree = "<group>"; };
+		F240C9B82F5986C900338A25 /* InstaReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaReelsView.swift; sourceTree = "<group>"; };
+		F240C9C02F598BFC00338A25 /* InstaHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHomeView.swift; sourceTree = "<group>"; };
+		F240C9C22F598C2B00338A25 /* InstaShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaShareView.swift; sourceTree = "<group>"; };
+		F240C9C42F598C3700338A25 /* InstaSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSearchView.swift; sourceTree = "<group>"; };
+		F240C9C62F598C5D00338A25 /* InstaProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaProfileView.swift; sourceTree = "<group>"; };
+		F240C9C82F59A43200338A25 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		F240C9CB2F59A61500338A25 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
+		F240C9CF2F5AED8100338A25 /* InstaReelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaReelsViewModel.swift; sourceTree = "<group>"; };
+		F240C9D12F5AFEFD00338A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F240C9D22F5B0AA800338A25 /* ReelCommentsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCommentsSheet.swift; sourceTree = "<group>"; };
 		F264DC8E2F5817CD000B7073 /* MeshGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientButton.swift; sourceTree = "<group>"; };
 		F28808232F5197C000413EE6 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		F28808252F51AB9700413EE6 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
@@ -134,6 +155,94 @@
 				F218DFFE2F56FBBA001AD1D4 /* TravelCardView.swift */,
 			);
 			path = "Travel Expenses";
+			sourceTree = "<group>";
+		};
+		F240C9B52F59853300338A25 /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9CE2F5AED6C00338A25 /* ViewModel */,
+				F240C9CD2F5AED5D00338A25 /* Views */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		F240C9BA2F598B4400338A25 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9BF2F598BE700338A25 /* ContentView */,
+				F240C9BB2F598B7600338A25 /* Home */,
+				F240C9B52F59853300338A25 /* Reels */,
+				F240C9BC2F598B7C00338A25 /* Share */,
+				F240C9BD2F598B9D00338A25 /* Search */,
+				F240C9BE2F598BA400338A25 /* Profile */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		F240C9BB2F598B7600338A25 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9C02F598BFC00338A25 /* InstaHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F240C9BC2F598B7C00338A25 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9C22F598C2B00338A25 /* InstaShareView.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		F240C9BD2F598B9D00338A25 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9C42F598C3700338A25 /* InstaSearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F240C9BE2F598BA400338A25 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9C62F598C5D00338A25 /* InstaProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F240C9BF2F598BE700338A25 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9B62F59854700338A25 /* InstaContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		F240C9CA2F59A60800338A25 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9CB2F59A61500338A25 /* Reel.swift */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		F240C9CD2F5AED5D00338A25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9B82F5986C900338A25 /* InstaReelsView.swift */,
+				F240C9C82F59A43200338A25 /* VideoPlayerView.swift */,
+				F240C9D22F5B0AA800338A25 /* ReelCommentsSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F240C9CE2F5AED6C00338A25 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F240C9CF2F5AED8100338A25 /* InstaReelsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F264DC8D2F5817B7000B7073 /* MeshGradientButton */ = {
@@ -233,6 +342,7 @@
 		F2DA50EE2F504D7B008196FF /* SwiftUIChallange */ = {
 			isa = PBXGroup;
 			children = (
+				F240C9D12F5AFEFD00338A25 /* Info.plist */,
 				F2DA50FB2F504DE8008196FF /* App */,
 				F2DA50FA2F504DDC008196FF /* Resources */,
 				F2DA51082F50712C008196FF /* Managers */,
@@ -280,6 +390,7 @@
 		F2DA50FC2F504DF7008196FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F240C9BA2F598B4400338A25 /* Instagram */,
 				F28808322F51E1D400413EE6 /* Home */,
 				F288082C2F51C9B700413EE6 /* AddPlace */,
 				F28808222F5197AE00413EE6 /* Paywall */,
@@ -315,6 +426,7 @@
 		F2DA51042F505D6B008196FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F240C9CA2F59A60800338A25 /* Instagram */,
 				F218DFFB2F56FB9B001AD1D4 /* Travel */,
 				F2A5EA802F55A4F50064C23E /* PopupView */,
 				F288082F2F51DB6800413EE6 /* AddNewPlace */,
@@ -479,8 +591,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F240C9B72F59854700338A25 /* InstaContentView.swift in Sources */,
 				F288082E2F51C9D600413EE6 /* AddPlaceView.swift in Sources */,
 				F2A5EA7F2F55A48F0064C23E /* PopupViewModel.swift in Sources */,
+				F240C9C92F59A43200338A25 /* VideoPlayerView.swift in Sources */,
+				F240C9C12F598BFC00338A25 /* InstaHomeView.swift in Sources */,
 				F218DFFD2F56FBA6001AD1D4 /* Card.swift in Sources */,
 				F28808242F5197C000413EE6 /* PaywallView.swift in Sources */,
 				F288082B2F51B9E800413EE6 /* AlertItem.swift in Sources */,
@@ -491,21 +606,28 @@
 				F22B46B22F56D8D2001384C9 /* TravelExpenses.swift in Sources */,
 				F2DA51092F50712C008196FF /* PermissionManager.swift in Sources */,
 				F22B46B42F56EFF0001384C9 /* View+Extension.swift in Sources */,
+				F240C9D32F5B0AA800338A25 /* ReelCommentsSheet.swift in Sources */,
 				F264DC8F2F5817CD000B7073 /* MeshGradientButton.swift in Sources */,
 				F28808292F51AF0A00413EE6 /* Package.swift in Sources */,
 				F28808262F51AB9700413EE6 /* ProductCardView.swift in Sources */,
 				F2DA51122F508653008196FF /* SettingsView.swift in Sources */,
+				F240C9CC2F59A61500338A25 /* Reel.swift in Sources */,
 				F2DA510F2F507FC0008196FF /* CGFloat+Extension.swift in Sources */,
 				F2DA51002F504F20008196FF /* Color+Extension.swift in Sources */,
+				F240C9D02F5AED8100338A25 /* InstaReelsViewModel.swift in Sources */,
 				F2A5EA7C2F558DF50064C23E /* PopupView.swift in Sources */,
 				F2DA51032F504FFD008196FF /* PermissionCard.swift in Sources */,
 				F2DA51162F509B38008196FF /* SettingSectionsView.swift in Sources */,
 				F218DFFF2F56FBBA001AD1D4 /* TravelCardView.swift in Sources */,
 				F28808312F51DB7800413EE6 /* Place.swift in Sources */,
+				F240C9B92F5986C900338A25 /* InstaReelsView.swift in Sources */,
 				F2A5EA822F55A4FE0064C23E /* Country.swift in Sources */,
 				F2DA51142F509A05008196FF /* Line.swift in Sources */,
+				F240C9C52F598C3700338A25 /* InstaSearchView.swift in Sources */,
 				F2DA50F12F504D7B008196FF /* SwiftUIChallangeApp.swift in Sources */,
+				F240C9C72F598C5D00338A25 /* InstaProfileView.swift in Sources */,
 				F28808342F51E1E600413EE6 /* HomeView.swift in Sources */,
+				F240C9C32F598C2B00338A25 /* InstaShareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +795,7 @@
 				DEVELOPMENT_TEAM = N26XM7U465;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIChallange/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Desing Challange";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location access even in the background so your circle can always see your up-to-date location.";
@@ -711,6 +834,7 @@
 				DEVELOPMENT_TEAM = N26XM7U465;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIChallange/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Desing Challange";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location access even in the background so your circle can always see your up-to-date location.";
